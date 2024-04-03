@@ -1,0 +1,1596 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Home Page - MK Real Estate </title>
+      <!-- add icon link -->
+      <link rel="icon" href="./logo-removebg-preview (1).png" type="image/x-icon">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+      <style>
+    
+    #bad:hover{
+        font-size: 15px;
+        transform: rotate(720deg);
+    }
+
+      #man{
+        background-image: url(data:image/jpeg;base64,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);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #man:hover{
+        background-image: url(data:image/jpeg;base64,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);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #04AA6D;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    </style>
+    <style>
+
+        #bad{
+        transition: all;
+        transition-duration: 2s;
+        transition-delay: 0s;
+        transition-timing-function: ease-in-out;  
+        }
+        #bad:hover{
+            transition: all;
+        transition-duration: 2s;
+        transition-delay: 0s;
+        transition-timing-function: ease-in-out;
+        transform: rotate(360deg);
+        }
+            </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+            </path>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+            </path>
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+            </path>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+            </path>
+        </symbol>
+    </svg>
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MK Real Estate </a>
+            <div class="image-fluid">
+                <img  width="180" height="180" src="logo-removebg-preview (1).png" alt="logo" role="img" aria-label="Placeholder">
+
+            </div>
+                <form class="d-flex" role="search">
+                  <div id="search-box"></div>
+                  <div id="search-results"></div>
+                  
+                  <script>
+                    // Replace YOUR_ENGINE_ID with your actual Custom Search Engine ID
+                    const engineId = 'YOUR_ENGINE_ID';
+                  
+                    // Replace YOUR_API_KEY with your actual Google API Key
+                    const apiKey = 'YOUR_API_KEY';
+                  
+                    // Create the search box element
+                    const searchBox = document.createElement('input');
+                    searchBox.type = 'text';
+                    searchBox.id = 'query';
+                    searchBox.placeholder = 'Search...';
+                    searchBox.addEventListener('keydown', (event) => {
+                      if (event.key === 'Enter') {
+                        search(searchBox.value);
+                      }
+                    });
+                    document.getElementById('search-box').appendChild(searchBox);
+                  
+                    // Create the search results element
+                    const searchResults = document.createElement('div');
+                    searchResults.id = 'search-results';
+                    document.getElementById('search-box').appendChild(searchResults);
+                  
+                    // Perform a search
+                    const search = (query) => {
+                      const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${engineId}&q=${query}`;
+                  
+                      fetch(url)
+                        .then((response) => response.json())
+                        .then((data) => {
+                          searchResults.innerHTML = '';
+                  
+                          data.items.forEach((item) => {
+                            const result = document.createElement('div');
+                            result.innerHTML = `
+                              <a href="${item.link}">${item.title}</a>
+                              <p>${item.snippet}</p>
+                            `;
+                            searchResults.appendChild(result);
+                          });
+                        })
+                        .catch((error) => {
+                          console.error(error);
+                        });
+                    };
+                  </script>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+
+    <nav class="topnav bg-black" id="myTopnav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="#our site">our site</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./Untitled-1.html">About</a>
+        <a href="./Untitled-2.html"  >Our real Estate agents</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars bg-warning"></i>
+        </a>
+    </nav>
+    <div id="man" class="bd-placeholder-img rounded-circle" width="140" height="140"></div>
+
+
+    <main>
+
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./c image 3.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./c image.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./c image 4.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>  
+                  
+        <!-- Marketing messaging and featurettes--.
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing" id="our site">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <span class="badge bg-secondary" id="bad">New</span>
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images (1).jpeg" 
+                        role="img" aria-label="Placeholder">
+                        <span class="badge bg-secondary" id="bad">10% off</span>
+                    <h2 class="fw-normal">Buy now</h2>
+                    <p>Way To Your Dream Place</p>
+                                                                 <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exa">
+  View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+          <div class="row featurette">
+              <span class="badge bg-success col-md-12">New</span>
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+              </div>
+              <div class="col-md-5">
+                
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images (1).jpeg">
+                
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <a href="./book form.html"   type="button" class="btn btn-secondary" role="button" >book now</a>
+      </div>
+    </div>
+  </div>
+</div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <span class="badge bg-secondary" id="bad">New</span>
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images (2).jpeg"
+                        role="img" aria-label="Placeholder">
+                        <span class="badge bg-secondary" id="bad">10% off</span>
+                        <h2 class="fw-normal">Buy now</h2>
+                        <p>Way To Your Dream Place</p>
+                                                                     <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#examp">
+  View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="examp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+          <div class="row featurette">
+              <span class="badge bg-success col-md-12">New</span>
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+              </div>
+              <div class="col-md-5">
+                
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images (2).jpeg">
+                
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+      </div>
+    </div>
+  </div>
+</div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <span class="badge bg-secondary" id="bad">New</span>
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images (3).jpeg"
+                        role="img" aria-label="Placeholder">
+                        <span class="badge bg-secondary" id="bad">10% off</span>
+                        <h2 class="fw-normal">Buy now</h2>
+                    <p>Way To Your Dream Place</p>
+                                             <!-- Button trigger modal -->
+                                             <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exam">
+                                              View details »
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                          
+                                                      <div class="row featurette">
+                                                          <span class="badge bg-success col-md-12">New</span>
+                                                          <div class="col-md-7">
+                                                            <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                                                            <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                                                          </div>
+                                                          <div class="col-md-5">
+                                                            
+                                                            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images (3).jpeg ">
+                                                            
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+            <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <span class="badge bg-secondary" id="bad">New</span>
+                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./download (1).jpeg"
+                            role="img" aria-label="Placeholder">
+                            <span class="badge bg-secondary" id="bad">10% off</span>
+                            <h2 class="fw-normal">Buy now</h2>
+                            <p>Way To Your Dream Place</p>
+
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    View details »
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <div class="row featurette">
+                <span class="badge bg-success col-md-12">New</span>
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                  <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                </div>
+                <div class="col-md-5">
+                  
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./download (1).jpeg">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <span class="badge bg-secondary" id="bad">New</span>
+                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./download (2).jpeg"
+                            role="img" aria-label="Placeholder">
+                            <span class="badge bg-secondary" id="bad">10% off</span>
+                            <h2 class="fw-normal">Buy now</h2>
+                            <p>Way To Your Dream Place</p>
+                                             <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#e">
+    View details »
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="e" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <div class="row featurette">
+                <span class="badge bg-success col-md-12">New</span>
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                  <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                </div>
+                <div class="col-md-5">
+                  
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./download (2).jpeg">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <span class="badge bg-secondary" id="bad">New</span>
+                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images (7).jpeg"
+                            role="img" aria-label="Placeholder">
+                            <span class="badge bg-secondary" id="bad">10% off</span>
+                            <h2 class="fw-normal">Buy now</h2>
+                    <p>Way To Your Dream Place</p>
+                                                                     <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ex">
+  View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+          <div class="row featurette">
+              <span class="badge bg-success col-md-12">New</span>
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+              </div>
+              <div class="col-md-5">
+                
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images (7).jpeg">
+                
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+    
+    
+                <!-- START THE FEATURETTES -->
+    
+                
+            <hr class="featurette-divider">
+            <hr class="featurette-divider">
+            <hr class="featurette-divider">
+            <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <span class="badge bg-secondary" id="bad">New</span>
+                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images (5).jpeg"
+                            role="img" aria-label="Placeholder">
+                            <span class="badge bg-secondary" id="bad">10% off</span>
+                            <h2 class="fw-normal">Buy now</h2>
+                            <p>Way To Your Dream Place</p>
+                                                                     <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampl">
+  View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+          <div class="row featurette">
+              <span class="badge bg-success col-md-12">New</span>
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+              </div>
+              <div class="col-md-5">
+                
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images (5).jpeg">
+                
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <span class="badge bg-secondary" id="bad">New</span>
+                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images (8).jpeg"
+                            role="img" aria-label="Placeholder">
+                            <span class="badge bg-secondary" id="bad">10% off</span>
+                            <h2 class="fw-normal">Buy now</h2>
+                            <p>Way To Your Dream Place</p>
+                                                                     <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#example">
+  View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+          <div class="row featurette">
+              <span class="badge bg-success col-md-12">New</span>
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+              </div>
+              <div class="col-md-5">
+                
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images (8).jpeg">
+                
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <span class="badge bg-secondary" id="bad">New</span>
+                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images (9).jpeg"
+                            role="img" aria-label="Placeholder">
+                            <span class="badge bg-secondary" id="bad">10% off</span>
+                            <h2 class="fw-normal">Buy now</h2>
+                    <p>Way To Your Dream Place</p>
+                                                                <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#examplem">
+  View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="examplem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+          <div class="row featurette">
+              <span class="badge bg-success col-md-12">New</span>
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+              </div>
+              <div class="col-md-5">
+                
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images (9).jpeg">
+                
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <a href="./book form.html"   type="button" class="btn btn-secondary" role="button"  >book now</a>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+    
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+        <!-- Marketing messaging and featurettes--.
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing" id="our site">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 1.jpeg" 
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+          <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                                       <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#1">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 1.jpeg" 
+      role="img" aria-label="Placeholder">  
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+<a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+</div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 10.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+              <p>Way To Your Dream Place</p>
+                                                           <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#2">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 10.jpeg"
+              role="img" aria-label="Placeholder">
+      
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img" width="140" height="140" src="./a 11.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                   <!-- Button trigger modal -->
+                                   <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#3">
+                                    View details »
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                
+                                            <div class="row featurette">
+                                                <span class="badge bg-success col-md-12">New</span>
+                                                <div class="col-md-7">
+                                                  <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                                                  <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                  
+                                                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 11.jpeg"
+                                                  role="img" aria-label="Placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+      </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+
+
+      <!-- first is end -->
+            <!-- first is end -->
+                  <!-- first is end -->
+                        <!-- first is end -->
+                              <!-- first is end -->
+                                    <!-- first is end -->
+                                          <!-- first is end -->
+                                                <!-- first is end -->
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+       <!-- Marketing messaging and featurettes--.
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing" id="our site">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 2.jpg" 
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+          <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                                       <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#4">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 2.jpg" 
+      role="img" aria-label="Placeholder">  
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 3.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+              <p>Way To Your Dream Place</p>
+                                                           <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#5">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 3.jpeg"
+              role="img" aria-label="Placeholder">
+      
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img" width="140" height="140" src="./a 4.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                   <!-- Button trigger modal -->
+                                   <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#6">
+                                    View details »
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                
+                                            <div class="row featurette">
+                                                <span class="badge bg-success col-md-12">New</span>
+                                                <div class="col-md-7">
+                                                  <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                                                  <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                  
+                                                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 4.jpeg"
+                                                  role="img" aria-label="Placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+      </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+                  <!-- second end -->
+                  <!-- second end -->
+                  <!-- second end -->
+                  <!-- second end -->
+                  <!-- second end -->
+                  <!-- second end -->
+                  <!-- second end -->
+
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+  </svg>
+
+</button>
+     <!-- Marketing messaging and featurettes--.
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing" id="our site">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 5.jpeg" 
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+          <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                                       <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#7">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 5.jpeg" 
+      role="img" aria-label="Placeholder">  
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 6.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+              <p>Way To Your Dream Place</p>
+                                                           <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#8">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 6.jpeg"
+              role="img" aria-label="Placeholder">
+      
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img" width="140" height="140" src="./a 7.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                   <!-- Button trigger modal -->
+                                   <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#9">
+                                    View details »
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                
+                                            <div class="row featurette">
+                                                <span class="badge bg-success col-md-12">New</span>
+                                                <div class="col-md-7">
+                                                  <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                                                  <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                  
+                                                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 7.jpeg"
+                                                  role="img" aria-label="Placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+      </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+  
+
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- third end -->
+
+      <!-- third end -->
+
+      <!-- third end -->
+
+      <!-- third end -->
+
+      <!-- third end -->
+
+      <!-- third end -->
+
+
+      <!-- third end -->
+      
+      
+      <!-- third end -->
+
+
+      <!-- third end -->
+
+
+      <!-- third end -->
+
+
+      <!-- third end -->
+
+
+    <!-- third end -->
+
+
+
+
+      <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+  </svg>
+
+</button>
+     <!-- Marketing messaging and featurettes--.
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+<div class="container marketing" id="our site">
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 9.jpeg" 
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+          <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                                       <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#10">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 9.jpeg" 
+      role="img" aria-label="Placeholder">  
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 13.jpg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+              <p>Way To Your Dream Place</p>
+                                                           <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#11">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 13.jpg"
+              role="img" aria-label="Placeholder">
+      
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img" width="140" height="140" src="./a 14.jpg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                   <!-- Button trigger modal -->
+                                   <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#12">
+                                    View details »
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                
+                                            <div class="row featurette">
+                                                <span class="badge bg-success col-md-12">New</span>
+                                                <div class="col-md-7">
+                                                  <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                                                  <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                  
+                                                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 14.jpg"
+                                                  role="img" aria-label="Placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+      </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+  </svg>
+
+</button>
+     <!-- Marketing messaging and featurettes--.
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing" id="our site">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 15.jpg" 
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+          <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                                       <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#13">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 15.jpg" 
+      role="img" aria-label="Placeholder">  
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img " width="140" height="140" src="./a 16.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+              <p>Way To Your Dream Place</p>
+                                                           <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#14">
+View details »
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<div class="row featurette">
+    <span class="badge bg-success col-md-12">New</span>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+      <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+    </div>
+    <div class="col-md-5">
+      
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 16.jpeg"
+              role="img" aria-label="Placeholder">
+      
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+  <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+  </div>
+</div>
+</div>
+</div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <span class="badge bg-secondary" id="bad">New</span>
+          <img class="bd-placeholder-img" width="140" height="140" src="./a 17.jpeg"
+              role="img" aria-label="Placeholder">
+              <span class="badge bg-secondary" id="bad">10% off</span>
+              <h2 class="fw-normal">Buy now</h2>
+          <p>Way To Your Dream Place</p>
+                                   <!-- Button trigger modal -->
+                                   <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#15">
+                                    View details »
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                
+                                            <div class="row featurette">
+                                                <span class="badge bg-success col-md-12">New</span>
+                                                <div class="col-md-7">
+                                                  <h2 class="featurette-heading fw-normal lh-1"  style="font-size: 25px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;">your dream is comes true  <span class="text-body-secondary">in our site </span></h2>
+                                                  <p  style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;" class="lead">you purchase your's favourite house in our site in your favourite Place</p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                  
+                                                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./a 17.jpeg"
+                                                  role="img" aria-label="Placeholder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <a href="./book form.html" type="button" class="btn btn-secondary" >book now</a>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+      </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+  </svg>
+
+</button>
+
+</div><!-- /.container -->
+
+
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+            </svg>
+
+        </button>
+
+
+        <style>
+            #btn-back-to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: none;
+            }
+        </style>
+        <!-- FOOTER -->
+        <footer class="container">
+            <a href="#" class="float-end"><i class="bi bi-arrow-up-circle-fill"></i></a>
+            <p>©MK real estate 2017–2024 Company, Inc. · </p>
+        </footer>
+    </main>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhHq6beMpkiP7fbn8SP8GJ38HmBeMZNQ0spH66Q8aNMqk47mGbz1I" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoMwG+4X4Z9J5Pqj5aXGcprz6G" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

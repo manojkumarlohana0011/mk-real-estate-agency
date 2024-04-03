@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalashi Map with Lines</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 500px;"></div>
+  <script src="kalashi-lines.js"></script>
+  <script>
+    // Initialize the map
+var map = L.map('map').setView([-1.2884, 36.8233], 10);
+
+// Add the OpenStreetMap tile layer
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Define the coordinates of the points you want to connect with lines
+var points = [
+  [-1.2884, 36.8233],
+  [-1.3034, 36.8233],
+  [-1.3034, 36.8433],
+  [-1.2884, 36.8433]
+];
+
+// Draw lines between the points
+for (var i = 0; i < points.length - 1; i++) {
+  L.polyline([points[i], points[i + 1]], { color: 'red' }).addTo(map);
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+                             /*--visitor count css--*/
+  .visitor-count {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+  }
+                              /*--visitor count css--*/
+                              
+  .ticker{
+    background-color: chocolate;
+  }
+
+                              /*<----CSS FOR LOGO---->*/
+  .Logo{
+    align-items: center;
+    width: 129px;
+    height: 119px;
+    margin-top: 0px;
+
+}
+                              /*<----CSS FOR LOGO---->*/
+
+
+                              /*<----CSS FOR CONTAUCT US---->*/
+#contact{
+
+width: 94%;
+height: 750px;
+background-color: rgb(247, 246, 246);
+padding-left: 10%;
+align-content: center;
+align-items: center;
+}
+
+.contact {
+background-color: #010101;
+padding-left: 20%;
+
+}
+
+.contact .items {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.contact .item {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+margin-top: 125px;
+}
+
+.contact .item .heading {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.contact .item .heading .title,
+.contact .heading .subtitle {
+text-align: start;
+max-width: 100%;
+}
+
+.contact .item form {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 3rem 1rem;
+background-color: #00040b;
+}
+
+.contact .item .row {
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+
+}
+
+.contact .item .row .ca {
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+border: 1px solid #eee;
+border-top: 2px solid #fff;
+border-bottom: 8px solid transparent;
+transition: all 0.9s;
+cursor: pointer;
+}
+
+.contact .item .row .ca:hover {
+background-color: #a0b3e511;
+border-bottom: 8px solid #f35405;
+
+}
+
+.contact .item .ca .line {
+display: flex;
+align-items: center;
+gap: 1rem;
+padding: 0.5rem 1rem;
+
+}
+
+.contact .item .ca i {
+font-size: 80px;
+}
+
+.contact .item .ca h4 {
+font-size: 22px;
+line-height: 22px;
+font-weight: 500;
+color: #f35405;
+
+}
+
+.contact .item .ca p {
+width: 90%;
+font-size: 16px;
+font-weight: 300;
+margin-left: 1rem;
+margin-top: 1rem;
+padding-bottom: 1rem;
+border-bottom: 1px solid #fff;
+height: 30px;
+display: flex;
+align-items: flex-start;
+transition: align-items 1s;
+}
+
+.contact .item .ca:hover p {
+border-bottom: 1px solid transparent;
+display: flex;
+align-items: flex-end;
+}
+
+.contact .item form .input {
+padding: 1.6rem 1rem;
+background-color: #a0b3e511;
+border: none;
+border-bottom: 2px solid #a0b3e5;
+outline: none;
+color: #fff;
+font-size: 16px;
+line-height: 16px;
+font-weight: 500;
+}
+
+.contact .item form .btn-contact {
+padding: 1.6rem 0.5rem;
+background-color: #f3540577;
+border: none;
+border-bottom: 2px solid #f35405;
+outline: none;
+color: #fff;
+font-size: 16px;
+line-height: 16px;
+font-weight: 500;
+cursor: pointer;
+transition: all 1s;
+}
+
+.contact .item form .btn-contact:hover {
+background-color: #f35405;
+}
+.hm{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  transition:all .2s cubic-bezier(.34, 1, 12, 68, 1.31);
+
+}
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.overflow{
+  overflow: hidden;
+   transition: all 0.5s ease-in-out;
+}
+.image-container .image{
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border: 6px solid rgb(255, 176, 4);
+  box-shadow: 0 3px 5px rgb(0, 0, 0. 3);
+  margin: 20px; 
+
+}
+
+.image-container .image img{
+  height: 50%;
+  width: 50%;
+  object-fit: cover; 
+}
+
+.image-container .image:hover{
+  transform: scale(1.4);
+}
+                              /*<----CSS FOR CONTAUCT US---->*/
+
+                              /*<----CSS FOR PRODUCT FILTER---->*/
+
+.Filters{
+  min-height: 9vh;
+  background-color: azure;
+  padding-bottom: 100px;
+
+}
+.Filters .controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.Filters .controls .buttons{
+  height: 40px;
+  width: 118px;
+  background: #030303;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 3);
+  text-align: center;
+  border-radius: 15%;
+
+
+}
+
+.Filters .controls .buttons-active{
+  background: coral;
+  color: #fff;
+ height: 37.5px;
+  width: 100px;
+  background: #030303;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 3);
+  text-align: center;
+  border-radius: 15%;
+
+}
+.Filters .controls .buttons:hover{
+  background-color:rgb(255, 115, 0);
+}
+.Filters .controls .buttons-active:hover{
+  background-color:rgb(255, 115, 0);
+}
+                              /*<----CSS FOR PRODUCT FILTER---->*/
+
+
+                              /*<----CSS FOR PRODUCT FILTER---->*/                              
+.Filter{
+  min-height: 8vh;
+  background-color: azure;
+  padding-bottom: 100px;
+
+}
+.Filter .con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.Filter .con .button{
+   height: 37.5px;
+  width: 100px;
+  background: #030303;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 3);
+  text-align: center;
+  border-radius: 15%;
+
+
+}
+
+.Filter .con .button-activ{
+  background: coral;
+  color: #fff;
+ height: 37.5px;
+  width: 100px;
+  background: #030303;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 3);
+  text-align: center;
+  border-radius: 15%;
+
+
+}
+.Filter .con .button:hover{
+  background-color:rgb(255, 115, 0);
+}
+
+.Filter .con #button-activ:hover{
+  background-color:rgb(255, 115, 0);
+}
+                              /*<----CSS FOR PRODUCT FILTER---->*/

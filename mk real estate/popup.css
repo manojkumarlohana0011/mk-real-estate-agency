@@ -1,0 +1,219 @@
+.popup-view{
+    z-index: 3;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;  
+}
+.popup-view.active{
+    opacity: 1;
+    visibility: visible;  
+}
+
+.popup-card{
+    position: relative;
+    display: flex;
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+
+
+}
+.popup-card .product-img{
+    z-index: 2;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.popup-card .product-img img{
+    z-index: 2;
+    position: relative;
+    width: 350px;
+    justify-content: center;
+    align-items: center;    
+}
+.popup-card .info{
+    z-index: 2;
+    background: rgb(253, 169, 113);
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+}
+.popup-card .close-btn{
+    color: #000000;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.popup-card .info h2{
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: bolder;
+    margin: 10px;
+
+
+}
+
+
+
+.popup-card .info p{
+    font-size: 15px;
+
+    margin: 10px;
+}
+
+.popup-card .info .price{
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+
+.popup-card .info .add-cart-btn{
+    color: #fff;
+    background: #009dd2;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+}
+
+.popup-card .info .add-wish-btn{
+    color: #009dd2;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.popup-card .info .add-cart-btn:hover{
+    color: #000;
+}
+
+.product-overlay .popup-btn{
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    background:#ff9a02;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*responsev style */
+
+
+@media (max-width:900px) {
+.popup-card{
+    flex-direction: column;
+    width: 550px;
+    height: auto;
+
+}
+.popup-card .product-img{
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    transform: translateY(0);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.popup-card .product-img img{
+    left: initial;
+    max-width: 50%;
+}
+
+.popup-card .info{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.popup-card .info h2{
+     margin: 20px 5px 5px 5px;
+     font-size: 25px;
+}
+
+.popup-card .info h2 span{
+    font-size: 10px;
+}
+
+.popup-card .info p{
+    margin: 5px;
+    font-size: 13px;
+    
+}
+
+.popup-card .info .price{
+    margin: 5px;
+    font-size: 30px;
+
+}
+
+.popup-card .info .add-cart-btn{
+    margin: 5px;
+    padding: 5px 40px;
+    font-size: 14px;
+}
+
+.popup-card .info .add-wish-btn{
+    font-size: 14px;
+
+}
+
+.popup-card .close-btn{
+    color: #fc0000;
+    z-index: 4;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+}
+
+ 
+    

@@ -1,0 +1,47 @@
+@media screen and (max-width: 600px) {
+    nav a {
+      padding: 10px;
+      display: block;
+      width: 100%;
+    }
+
+ 
+    .visitor-count {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      color: white;
+    }
+
+    .sidenav {
+      display: none;
+    }
+
+    .navbar-nav {
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+      /* Adjust as needed for spacing */
+    }
+
+    .navbar-nav .nav-item {
+      display: inline-block;
+      margin: 0 10px;
+      /* Adjust as needed for spacing */
+
+    }
+
+
+  }
+
+  @media (max-width:900px){
+        #contect .items{
+      height: 1300px;
+      display: inline-block;
+      display: flex;
+      
+    }
+    .items{
+      height: 1300px;
+    }
+  }
